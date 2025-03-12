@@ -1,0 +1,20 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: Privatebin
+version: "1.7.6"
+slug: privatebin
+description: Privatebin docker port to HA addon - https://github.com/PrivateBin/docker-nginx-fpm-alpine
+url: "https://github.com/enoquefcd/hassio-addons/tree/main/privatebin"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+map:
+  - config:rw
+image: "privatebin/nginx-fpm-alpine"
+ports:
+  8080/tcp: 13020
+environment:
+  CONFIG_PATH: /config/privatebin_data/
