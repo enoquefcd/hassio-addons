@@ -18,3 +18,4 @@ ports:
   8080/tcp: 13020
 environment:
   CONFIG_PATH: /config/privatebin_data/
+webui: "[PROTO:ssl]://[HOST]:[PORT:8080]"
