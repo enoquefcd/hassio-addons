@@ -1,0 +1,4 @@
+# https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
+name: HA Add-ons by Enoque Duarte
+url: 'https://github.com/enoquefcd/hassio-addons'
+maintainer: Enoque Duarte
